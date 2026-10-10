@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('abi_lang') === 'ta') document.documentElement.lang = 'ta';
+        var t = localStorage.getItem('abi_theme');
+        if (t !== 'light' && t !== 'dark') t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (t === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) { }
+    })();
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <title>ABI Wood Works | Custom Furniture in Kumbakonam</title>
+  <meta name="description"
+    content="Custom wooden sofas, wardrobes, chairs, tables, beds, doors and furniture woodwork by ABI WOOD WORKS in Ammachathiram, Kumbakonam, Thanjavur, Tamil Nadu. Owned by Sankar." />
+  <meta name="keywords"
+    content="ABI Wood Works, Sankar carpenter, Kumbakonam wooden furniture, Ammachathiram carpentry, custom wood sofa, teak wardrobe Kumbakonam, wood works Thanjavur" />
+  <meta name="author" content="ABI WOOD WORKS" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ABI Wood Works | Custom Furniture in Kumbakonam" />
+  <meta property="og:description"
+    content="Thoughtfully crafted wooden furniture, shaped around your home, your space, and your ideas in Kumbakonam, Tamil Nadu." />
+  <meta name="theme-color" content="#F7F5F0" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- LocalBusiness Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ABI WOOD WORKS",
+      "telephone": "+919585839099",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ammachathiram",
+        "addressLocality": "Kumbakonam",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "description": "Custom carpentry, furniture manufacturing, wooden furniture, household woodwork, customized furniture, and related woodworking services in Kumbakonam."
+    }
+    </script>
+</head>
+
+<body
+  class="bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text antialiased transition-colors duration-300 min-h-screen overflow-x-hidden selection:bg-light-wood selection:text-white dark:selection:bg-dark-accent dark:selection:text-dark-bg">
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
