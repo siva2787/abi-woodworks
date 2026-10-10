@@ -59,7 +59,7 @@ export const AppContent: React.FC = () => {
   const closeProduct = useCallback(() => setSelectedProduct(null), []);
 
   return (
-    <div className="min-h-screen bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300 flex flex-col font-sans">
+    <div className="app-shell relative min-h-screen bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300 flex flex-col font-sans">
       {/* Navigation Header */}
       <Navbar
         onOpenQuote={(cat) => handleOpenQuote(cat)}

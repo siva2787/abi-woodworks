@@ -60,6 +60,29 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+#root,
+.app-shell {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@supports (overflow: clip) {
+
+  html,
+  body,
+  #root,
+  .app-shell {
+    overflow-x: clip;
+  }
 }
 
 html[lang='ta'] .uppercase {
